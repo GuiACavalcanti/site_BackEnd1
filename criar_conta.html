@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <form action="criar_conta_script.php" method="post" id="msform">
-        <fieldset>
-            <h2 class="fs-title">Create your account</h2>
-            <br>
-            <input type="text" id="nome" name="email" placeholder="Nome" />
-            <input type="email" id="email" name="pass" placeholder="Email" />
-            <input type="password" id="senha" name="cpass" placeholder="Senha" />
-            <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
+    <div onclick="location.href = 'index.php'">
+        <button>Home</button>
+    </div>
+    <form action="criar_conta_script.php" method="post" >
+        <h3>Criar conta</h3>
+        <div>
+            Nome: <br>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <br>
+        <div>
+            Email: <br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            Senha: <br>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+        <br>
+        <div>
+            <button>Criar conta</button>
+        </div>
      </form>
 </body>
 </html>

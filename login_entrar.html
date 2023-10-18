@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="center">
-          <h1>Login</h1>
-          <form action="login_conect.php" method="POST">
-            <divonclick="">
-              <img src="voltar1.png" alt="">
-            </div>
-              <div class="txt_field">
-                  <input type="email" id="TxtEmail" name="TxtEmail" required>
-                  <span></span>
-                  <label>Email</label>
-              </div>
-              <div class="txt_field">
-                  <input type="password" id="TxtSenha" name="TxtSenha" required>
-                  <span></span>
-                  <label>Password</label>
-              </div>
-              <div class="pass">Esqueceu a senha?</div>
-              <input name="submit" type="Submit" value="Login">
-              <div class="signup_link">
-                  
-              </div>
-          </form>
-      </div>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Consolas;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="location.href = 'index.php'">
+        <button>Home</button>
     </div>
-  </body>
+    <h3>Entrar</h3>
+    <form action="login_conect.php" action="name_user.php" method="post">
+        <div>
+            Email: <br>
+            <input type="email" id="TxtEmail" name="TxtEmail" required>
+        </div>
+        <br>
+        <div>
+            Senha: <br>
+            <input type="password" id="TxtSenha" name="TxtSenha" required>
+        </div>
+        <br>
+        <button>Entrar</button>
+    </form>
+    <br>
+    <a href="recuperar_senha.html">Esqueceu a senha?</a>
+</body>
 </html>
